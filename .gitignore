@@ -1,0 +1,12 @@
+data/
+exports/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets et donnees d installation : jamais versionnes.
+*.env
+.venv/
+
+# Notes de travail internes.
+CLAUDE.md

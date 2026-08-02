@@ -1,0 +1,98 @@
+{
+  "produit": "",
+  "pitch": "anonymisation des donnees personnelles avant envoi a une IA (conformite RGPD, marche francais)",
+  "effectifs_cibles": ["01", "02", "03", "11", "12", "21", "22"],
+  "effectifs_libelles": {
+    "NN": "non renseigne",
+    "00": "0 salarie",
+    "01": "1 a 2",
+    "02": "3 a 5",
+    "03": "6 a 9",
+    "11": "10 a 19",
+    "12": "20 a 49",
+    "21": "50 a 99",
+    "22": "100 a 199",
+    "31": "200 a 249",
+    "32": "250 a 499",
+    "41": "500 a 999",
+    "42": "1000 a 1999",
+    "51": "2000 a 4999",
+    "52": "5000 a 9999",
+    "53": "10000 et plus"
+  },
+  "segments": [
+    {
+      "cle": "avocats",
+      "libelle": "Cabinets d'avocats / juristes",
+      "naf": ["69.10Z"],
+      "osm": ["office=lawyer"],
+      "priorite": 5,
+      "argument": "traitent des dossiers clients nominatifs et utilisent deja des IA de redaction"
+    },
+    {
+      "cle": "notaires",
+      "libelle": "Offices notariaux",
+      "naf": ["69.10Z"],
+      "q": "notaire",
+      "osm": ["office=notary"],
+      "priorite": 5,
+      "argument": "actes, successions, pieces d'identite : PII a chaque dossier"
+    },
+    {
+      "cle": "experts-comptables",
+      "libelle": "Experts-comptables / audit",
+      "naf": ["69.20Z"],
+      "osm": ["office=accountant", "office=tax_advisor"],
+      "priorite": 5,
+      "argument": "manipulent paie, RIB et identites, secret professionnel"
+    },
+    {
+      "cle": "rh-recrutement",
+      "libelle": "RH, recrutement, portage",
+      "naf": ["78.10Z", "78.30Z", "78.20Z"],
+      "osm": ["office=employment_agency"],
+      "priorite": 4,
+      "argument": "CV = donnees personnelles massives, tri par IA tres repandu"
+    },
+    {
+      "cle": "conseil-gestion",
+      "libelle": "Conseil de gestion / strategie",
+      "naf": ["70.22Z"],
+      "osm": ["office=consulting"],
+      "priorite": 3,
+      "argument": "documents clients confidentiels passes a des LLM"
+    },
+    {
+      "cle": "assurance-courtage",
+      "libelle": "Courtiers assurance / patrimoine",
+      "naf": ["66.22Z", "66.19B", "66.21Z"],
+      "osm": ["office=insurance", "office=financial_advisor"],
+      "priorite": 4,
+      "argument": "donnees de sante et financieres des assures"
+    },
+    {
+      "cle": "sante",
+      "libelle": "Structures de sante et medico-social",
+      "naf": ["86.10Z", "86.21Z", "86.90F", "87.10A", "88.10A"],
+      "osm": ["amenity=clinic", "healthcare=centre"],
+      "priorite": 4,
+      "argument": "donnees de sante = categorie particuliere article 9 RGPD"
+    },
+    {
+      "cle": "esn-it",
+      "libelle": "ESN / editeurs / conseil SI",
+      "naf": ["62.01Z", "62.02A", "62.02B", "62.03Z"],
+      "osm": ["office=it"],
+      "priorite": 3,
+      "argument": "integrent ce type d'outil pour leurs propres clients (revendeurs potentiels)"
+    },
+    {
+      "cle": "immobilier-gestion",
+      "libelle": "Administrateurs de biens / syndics",
+      "naf": ["68.32A", "68.31Z"],
+      "osm": ["office=estate_agent"],
+      "priorite": 4,
+      "argument": "dossiers locataires : pieces d'identite, bulletins de salaire, avis d'imposition - autant de PII que dans un dossier d'avocat"
+    }
+  ]
+}
