@@ -182,5 +182,8 @@ Aucune donnée collectée, aucune adresse réelle, aucun secret. `data/` et
 
 ## Licence
 
-Aucune licence déclarée : tous droits réservés. Ouvrez une issue si vous
-souhaitez l'utiliser.
+[MIT](LICENSE). Faites-en ce que vous voulez, y compris commercialement, en
+gardant la mention de copyright. Le logiciel est fourni sans garantie.
+
+⚠️ La licence couvre le code, pas votre usage : ce que vous collectez et à qui
+vous écrivez reste votre responsabilité, sous le droit qui s'applique chez vous.
