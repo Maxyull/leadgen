@@ -1,5 +1,10 @@
 # leadgen
 
+[![Licence MIT](https://img.shields.io/badge/licence-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Sources ouvertes](https://img.shields.io/badge/sources-SIRENE%20%2B%20OpenStreetMap-4c9a2a)](#en-quoi-ça-consiste)
+[![Paire : mailing](https://img.shields.io/badge/paire-mailing-181717?logo=github&logoColor=white)](https://github.com/Maxyull/mailing)
+
 **Constituer un fichier de prospection B2B à partir des registres publics,
 légalement, sans acheter de base de données.**
 
